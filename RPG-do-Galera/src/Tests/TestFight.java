@@ -3,6 +3,8 @@ package Tests;
 import java.util.Random;
 
 import Classes.CharacterType;
+import Classes.Enemy;
+import Classes.Human;
 
 public class TestFight {
 	
@@ -21,16 +23,9 @@ public class TestFight {
 		veryHard = new Random().nextDouble(100);
 		insane = new Random().nextDouble(1000);
 
-		// CHARACTERS                             // name  , str, def, life, lvl
-		CharacterType warrior = new CharacterType("Aragorn", 2.0, 3.0, 40.0, 1);
-		warrior.broadSword();
-		warrior.woodenShield();
+		// CHARACTERS
+		Human warrior = new Human("Aragorn", 2.0, 3.0, 50.0, 1);
 		
-		CharacterType paladin = new CharacterType("Arthas", 2.5, 2.5, 35.0, 1);
-		paladin.fireSword();
-		
-		CharacterType mage = new CharacterType("Dumbledore", 3.3, 2.2, 32.0, 1);
-		mage.magicalStaff();
 		
 		
 //                             name  , str, def, life
